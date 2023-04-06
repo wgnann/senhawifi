@@ -1,17 +1,13 @@
 {
-    "name": "uspdev/starter",
+    "name": "wgnann/senhaswifi",
     "type": "project",
-    "description": "Esqueleto para nova aplicação Uspdev",
+    "description": "Sistema de distribuição de senhas para WiFi",
     "authors": [
         {
-            "name": "Masaki Kawabata Neto",
-            "email": "kawabata@usp.br",
-            "homepage": "https://github.com/masakik"
+            "name": "Will Gnann",
+            "email": "gnann@ime.usp.br",
+            "homepage": "https://github.com/wgnann"
         }
-    ],
-    "keywords": [
-        "uspdev",
-        "starter"
     ],
     "license": "MIT",
     "require": {
