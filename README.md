@@ -17,4 +17,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Configure o .env conforme a necessidade
+É necessário configurar as variáveis relevantes:
+* `REDEWIFI`: lista de redes separadas por vírgula;
+* `SENHAWIFI`: lista de senhas separadas por vírgula;
+* `SENHAUNICA_CODIGO_UNIDADE`: código da unidade segundo o replicado.

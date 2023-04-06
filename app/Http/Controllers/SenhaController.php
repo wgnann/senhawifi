@@ -13,6 +13,13 @@ class SenhaController extends Controller
 
     public function index()
     {
-        return view('senha');
+        $redes = array_combine(
+            explode(',', env('REDEWIFI')),
+            explode(',', env('SENHAWIFI'))
+        );
+
+        return view('senha', [
+            'redes' => $redes
+        ]);
     }
 }

@@ -3,19 +3,31 @@
 @section('content')
   <div class="card">
     <div class="card-header h4">
-      Arquivo README.md
+      Senhas WiFi
     </div>
-    <div class="card-body">
-      {!! md2html(file_get_contents(base_path('README.md'))) !!}
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header h4">
-      Conteúdo do laravel-usp-theme (@@parent)
-    </div>
-    <div class="card-body">
-      @parent
-    </div>
+    @canany(['docente', 'servidor'])
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>SSID</th>
+              <th>Senha</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach ($redes as $ssid => $pass)
+              <tr>
+                <td>{{ $ssid }}</td>
+                <td><pre>{{ $pass }}</td>
+              </tr>
+            @endforeach
+          </tbody>
+        </table>
+      </div>
+    @else
+      <div class="card-body">
+        <p>Sistema liberado apenas para docentes e funcionários.</p>
+      </div>
+    @endcanany
   </div>
 @endsection
