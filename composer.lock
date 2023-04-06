@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22ad74db53714714dddc4c0b37ae7bdd",
+    "content-hash": "f3620177dfeb8a2d39b390de39cd0371",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6339,17 +6339,11 @@
         },
         {
             "name": "uspdev/senhaunica-socialite",
-            "version": "4.3.4",
+            "version": "dev-permissions",
             "source": {
                 "type": "git",
-                "url": "https://github.com/uspdev/senhaunica-socialite.git",
-                "reference": "20d3c17cb0e43dc9d6f0fa6e8579d9be9375b049"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/uspdev/senhaunica-socialite/zipball/20d3c17cb0e43dc9d6f0fa6e8579d9be9375b049",
-                "reference": "20d3c17cb0e43dc9d6f0fa6e8579d9be9375b049",
-                "shasum": ""
+                "url": "https://github.com/uspdev/senhaunica-socialite",
+                "reference": "d5355717a43e03e69c9cef9043a6ce355f5ed990"
             },
             "require": {
                 "doctrine/dbal": "^3.1",
@@ -6367,14 +6361,13 @@
                 }
             },
             "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
                 "psr-4": {
                     "Uspdev\\SenhaunicaSocialite\\": "src/"
-                }
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -6387,11 +6380,7 @@
             ],
             "description": "Senhaunica OAuth1 Provider for Laravel Socialite",
             "homepage": "https://github.com/uspdev/senhaunica-socialite",
-            "support": {
-                "issues": "https://github.com/uspdev/senhaunica-socialite/issues",
-                "source": "https://github.com/uspdev/senhaunica-socialite/tree/4.3.4"
-            },
-            "time": "2022-11-28T18:36:02+00:00"
+            "time": "2023-03-20T14:13:18+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9130,12 +9119,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "uspdev/senhaunica-socialite": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.0.0"
 }
